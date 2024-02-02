@@ -1,0 +1,37 @@
+ 
+.hello {
+    margin-left: 15rem; 
+    margin-right: 15rem;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    margin-top: 25rem;
+    z-index: 2;
+    
+}
+
+  
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   background-color: black;/* Black background */
+   
+    position: relative;
+}  
+
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.3)), url(images/sunset-815270_1280.jpg) center/cover no-repeat fixed; /* Adjust the gradient colors and alpha values as needed, and replace 'your-image.jpg' with the actual image filename */
+  background-size: cover;
+  background-position: center;
+}
+
+
